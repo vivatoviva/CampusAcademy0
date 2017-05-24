@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>demo</title>
+    <style type="text/css" media="screen">
+        .container {
+            width:400px;
+            height:200px;
+            position: relative;
+            background-color: #ccc;
+            overflow:hidden;
+        }
+        .round-items{
+            background-color: #fc0;
+            position:absolute;
+            width:100px;
+            height:100px;
+            border-radius:50%;
+        }
+        .firround {
+            left:-50px;
+            top:-50px;
+        }
+        .secround {
+            right:-50px;
+            bottom:-50px;
+        }
+        canvas {
+            margin-top:20px;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="round-items firround">
+
+        </div>
+        <div class="round-items secround">
+
+        </div>
+    </div>
+    <canvas width="400" height="200">
+    </canvas>
+    <script type="text/javascript">
+         var canvas = document.getElementsByTagName("canvas")[0],
+             content = canvas.getContext("2d");
+             content.beginPath();
+             content.fillStyle = "#fc0";
+             //content.arc(0,0,50,0,2*Math.PI);
+             content.arc(400,200,50,0,2*Math.PI);
+             content.fill();
+             content.closePath();
+             var timer = null;
+              var i=1,index=1;
+             function move(){
+                content.beginPath();
+                content.fillStyle = "#fc0";
+                content.clearRect(0, 0, 50, 50);
+                content.arc(0,0,i,0,2*Math.PI);
+                content.fill();
+                content.closePath();
+                if(index==1){
+                    i++;
+                    if(i==50){
+                        index=0
+                    }
+                } else{
+                    i--;
+                    if(i==0){
+                        index=1;
+                    }
+                }
+
+             }
+             timer = setInterval(function(){
+                move()
+             },50);
+    </script>
+</body>
+</html>

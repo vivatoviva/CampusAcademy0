@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>sy-5</title>
+    <style type="text/css" media="screen">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            border:0;
+        }
+        ul{list-style: none;}
+        body{
+            background-color: #EEEEEE;
+        }
+        header{
+            width:100%;
+            min-width:800px;
+            background-color: #535353;
+        }
+        header img {
+            width:150px;
+            height:auto;
+            margin-left:50px;
+            float:left;
+        }
+        header ul {
+            float:right;
+            line-height:75px;
+            margin-right:40px;
+        }
+        header ul:after{
+             content:"";
+            display: table;
+            clear:both;
+
+        }
+        header:after {
+            content:"";
+            display: table;
+            clear:both;
+        }
+        nav li {
+            float:left;
+            margin-left:20px;
+
+        }
+        nav li a{
+            color:#fff;
+            text-decoration:none;
+        }
+        .content {
+            width:100%;
+        }
+
+        .sidebar {
+            margin-top:20px;
+            float:right;
+            overflow:auto;
+            background-color: #fff;
+            width:350px;
+            box-shadow:0 0 10px #5E5E5E;
+            margin-left:-350px;
+        }
+         table {
+            width:100%;
+         }
+        .sidebar p {
+            border-left:5px solid #ccc;
+            margin-top:20px;
+            margin-left:5px;
+            line-height:40px;
+            font-size:18px;
+            text-indent:5px;
+        }
+        .sidebar td {
+            height:30px;
+            font-size:15px;
+            position:relative;
+        }
+        .sidebar tr td:nth-of-type(1){
+            width:130px;
+            position:relative;
+            transform: translateX(-10px);
+            text-align:right;
+            vertical-align:top;
+        }
+        .morewidth {
+            height:50px;
+            vertical-align:top;
+        }
+        .sidebar span {
+            position: absolute;
+            left:0;
+            bottom:10px;
+            font-size:12px;
+            color:#C4C4C4;
+        }
+        textarea {
+            height:80px;
+            width:160px;
+        }
+        button {
+            width:260px;
+            height:40px;
+            margin:0 auto;
+            transform: translateX(-30px);
+            margin-top:10px;
+            margin-bottom:20px;
+            border:0;
+            outline:1px solid #000;
+            transition: all .4s ease;
+            cursor:pointer;
+        }
+        button:hover {
+            background-color: blue;
+
+        }
+        .content-items{
+            width:100%;
+            float:left;
+            margin-top:20px;
+        }
+
+        .content-items .inner {
+            padding-left:15px;
+            margin-left:20px;
+            margin-right:370px;
+            background-color: #fff;
+            box-shadow:0 0 10px #5E5E5E;
+        }
+        .content-items:last-of-type .inner{
+            margin-bottom:30px;
+        }
+        .content-items .inner:after {
+            content:"";
+            display:table;
+            clear:both;
+        }
+       figure {
+        border:1px solid #000;
+        float:left;
+        margin:20px;
+       }
+       figcaption {
+        text-align:center;
+       }
+       figure img {
+        width:180px;
+       }
+        ol {
+            list-style-position:inside;
+        }
+        ol li {
+            font-weight:bold;
+        }
+        .content-items table {
+            margin-bottom:20px;
+        }
+        .content-items table th{
+            background-color: #222222;
+            text-align:left;
+            color:#fff;
+        }
+        .content-items table .last{
+            background-color: #888888;
+        }
+        .footer {
+
+            overflow:hidden;  /*激发块级元素的bFc属性 */
+            width:100%;
+        }
+        .footer p {
+            background-color: #000;
+            width:100%;
+            line-height:50px;
+            color:#fff;
+            font-size:15px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="">
+    <img src="背景.png">
+    <nav class="">
+            <ul>
+                <li><a href="#">导航链接一</a></li><!--
+             --><li><a href="#">导航链接二</a></li><!--
+             --><li><a href="#">导航链接三</a></li><!--
+             --><li><a href="#">导航链接四</a></li>
+            </ul>
+        </nav>
+    </header><!-- /header -->
+    <div class="content ">
+        <div class="sidebar">
+          <p><b>这里以后是一个侧栏，这是侧栏的标题</b></p>
+          <form action="" method="get" accept-charset="utf-8">
+          <table>
+              <tbody>
+                  <tr class="morewidth">
+                      <td>请输入邮箱地址</td>
+                      <td ><input type="text" name="" value=""><span>邮箱地址请按要求输入</span></td>
+                  </tr>
+                  <tr>
+                      <td>请输入密码</td>
+                      <td><input type="password" name="" value=""></td>
+                  </tr>
+                  <tr class="morewidth">
+                      <td>请重复输入密码</td>
+                      <td><input type="password" name="" value=""><span>密码长度为1-16位英文数字</span></td>
+                  </tr>
+                  <tr>
+                      <td>性别</td>
+                      <td><input type="radio" name="sex" value="">男
+                      <input type="radio" name="sex">女</td>
+                  </tr>
+                  <tr>
+                      <td>城市</td>
+                      <td><select name="">
+                          <option value="">北京</option>
+
+                      </select></td>
+                  </tr>
+                  <tr>
+                      <td>爱好</td>
+                      <td><input type="checkbox" name="">运动
+                      <input type="checkbox" name="">艺术
+                      <input type="checkbox" name="">科学
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>个人概述</td>
+                      <td><textarea name=""></textarea></td>
+                  </tr>
+                  <tr>
+                       <td colspan="2"> <button type="submit">提交</button></td></tr>
+              </tbody>
+          </table>
+          </form>
+        </div>
+        <DIV class="content-items">
+        <div class="inner">
+
+
+            <h1>文章一级标题</h1>
+            <h2>文章二级标题</h2>
+            <h6>文章作者 发表文章时间</h6>
+            <br>
+            <p>
+                1864年（日本元治元年）6月，伊藤同井上回国，发现長州藩也被炮轰了，即加入長州藩军队。此时正值英法等四国联合舰队攻打下关前夕，伊藤即力劝藩主毛利敬亲不可攘夷。指出，与其空费国力，不如将此力用于恢复王政，“开國进取”以完成国内统一。后因藩主执意攘夷，终发生四国舰队炮击下关事件。
+ 不久，幕府第一次讨伐长州，藩内保守派即向幕府表示“恭顺”。1865年（日本庆应元年）初，高杉晋作等改革派下级武士起兵，夺得藩政，伊藤坚决支持。伊藤是从攘夷到“开国进取”转变的先行者和促进者。
+1866年1月，萨、长两藩下级武士结成倒幕联盟。6月，幕府第二次讨伐长州。伊藤前往石州，准备参战，抗击幕府。后受长州藩之命，去长崎向外商购买轮船，以对付幕府的海军，但未成功，又转往上海。8月底买回两艘轮船。此时，征长战事以幕府失败告终。
+1867年10月14日，朝廷向倒幕派发出讨幕密诏。同一天，幕府将军德川庆喜提出“大政奉还”。12月9日（阴历），天皇发表“王政复古”大诏令，宣布废除幕府制，建立新政府。伊藤得知讨幕消息后，即从长崎来兵库，欲与长州藩诸队一起战斗，后因故回长州。
+明治维新成功后，在木户孝允、大久保利通和细田道一的领导下负责处理外交事务。历任外国事务局交涉员、判事，兵库县知事，会计官权判事，大藏少辅兼民部少辅，工部大辅等职。
+            </p>
+            <img src="下载.jpg">
+        </div>
+        </DIV>
+        <DIV class="content-items">
+        <div class="inner">
+
+
+            <h1>另一篇文章一级标题</h1>
+            <h2>文章二级标题</h2>
+            <h6>文章作者 发表文章时间</h6>
+            <br>
+            <p>
+                1864年（日本元治元年）6月，伊藤同井上回国，发现長州藩也被炮轰了，即加入長州藩军队。此时正值英法等四国联合舰队攻打下关前夕，伊藤即力劝藩主毛利敬亲不可攘夷。指出，与其空费国力，不如将此力用于恢复王政，“开國进取”以完成国内统一。后因藩主执意攘夷，终发生四国舰队炮击下关事件。
+ 不久，幕府第一次讨伐长州，藩内保守派即向幕府表示“恭顺”。1865年（日本庆应元年）初，高杉晋作等改革派下级武士起兵，夺得藩政，伊藤坚决支持。伊藤是从攘夷到“开国进取”转变的先行者和促进者。
+1866年1月，萨、长两藩下级武士结成倒幕联盟。6月，幕府第二次讨伐长州。伊藤前往石州，准备参战，抗击幕府。后受长州藩之命，去长崎向外商购买轮船，以对付幕府的海军，但未成功，又转往上海。8月底买回两艘轮船。此时，征长战事以幕府失败告终。
+1867年10月14日，朝廷向倒幕派发出讨幕密诏。同一天，幕府将军德川庆喜提出“大政奉还”。12月9日（阴历），天皇发表“王政复古”大诏令，宣布废除幕府制，建立新政府。伊藤得知讨幕消息后，即从长崎来兵库，欲与长州藩诸队一起战斗，后因故回长州。
+明治维新成功后，在木户孝允、大久保利通和细田道一的领导下负责处理外交事务。历任外国事务局交涉员、判事，兵库县知事，会计官权判事，大藏少辅兼民部少辅，工部大辅等职。
+            </p>
+            <img src="下载.jpg">
+            <ul>
+                <li>列表项目一</li>
+                <li>列表项目二</li>
+                <li>列表项目三</li>
+
+            </ul>
+        </div>
+        </DIV>
+        <DIV class="content-items">
+        <div class="inner">
+          <figure>
+          <img src="下载.jpg" alt="" title="图片">
+          <figcaption>图片描述</figcaption>
+          </figure>
+          <figure>
+          <img src="下载.jpg" alt="" title="图片">
+          <figcaption>图片描述</figcaption>
+          </figure>
+          <figure>
+          <img src="下载.jpg" alt="" title="图片">
+          <figcaption>图片描述</figcaption>
+          </figure>
+          <figure>
+          <img src="下载.jpg" alt="" title="图片">
+          <figcaption>图片描述</figcaption>
+          </figure>
+          <figure>
+          <img src="下载.jpg" alt="" title="图片">
+          <figcaption>图片描述</figcaption>
+          </figure>
+          <figure>
+          <img src="下载.jpg" alt="" title="图片">
+          <figcaption>图片描述</figcaption>
+          </figure>
+          <figure>
+          <img src="下载.jpg" alt="" title="图片">
+          <figcaption>图片描述</figcaption>
+          </figure>
+          <figure>
+          <img src="下载.jpg" alt="" title="图片">
+          <figcaption>图片描述</figcaption>
+          </figure>
+          <figure>
+          <img src="下载.jpg" alt="" title="图片">
+          <figcaption>图片描述</figcaption>
+          </figure>
+          <figure>
+          <img src="下载.jpg" alt="" title="图片">
+          <figcaption>图片描述</figcaption>
+          </figure>
+        </div>
+        </DIV>
+        <DIV class="content-items">
+        <div class="inner">
+
+
+            <h1>最后一篇文章一级标题</h1>
+            <h2>文章二级标题</h2>
+            <h6>文章作者 发表文章时间</h6>
+            <br>
+            <ol>
+                <li>排名1</li>
+                <li>排名2</li>
+                <li>排名3</li>
+            </ul>
+            <table cellspacing="1">
+                <thead>
+                    <tr>
+                        <th>表头</th>
+                        <th>表头</th>
+                        <th>表头</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>表单元格内容</td>
+                        <td>表单元格内容</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>表单元格内容</td>
+                        <td>表单元格内容</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表单元格内容</td>
+                        <td>表单元格内容</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表单元格内容</td>
+                        <td>表单元格内容</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                        <td class="last"><b>总计</b></td>
+                        <td class="last"><b>1000</b></td>
+                        <td class="last"> </td>
+                </tbody>
+            </table>
+        </div>
+        </DIV>
+    </div>
+    <div class="footer">
+           <p>版权所有@</p>
+    </div>
+
+</body>
+</html>
