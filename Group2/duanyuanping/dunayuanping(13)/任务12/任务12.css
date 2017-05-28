@@ -1,0 +1,99 @@
+body,input,form{
+	margin:0;
+	padding:0;
+}
+table tr:nth-child(2){
+	color:red;
+}
+table tr:nth-child(3){
+	color:red;
+}
+table tr:nth-child(4){
+	color:red;
+}
+table tr:nth-child(2n+1){
+	background: #ccc;
+}
+table tr:first-child{
+	background: black;
+	color:#fff;
+}
+
+
+form{
+	margin-top:50px;
+}
+form input{
+	width:100px;
+}
+form input[type="text"]:focus{
+	width:215px;
+}
+form input{
+	 -webkit-transition-property: width;
+  transition-property: width;
+  -webkit-transition-duration:.5s;
+  transition-duration:.5s;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -webkit-transition-delay: .18s;
+  	transition-delay:.18s;
+}
+form input:hover{
+	width:215px;
+}
+
+
+.keyframes{
+	width:300px;
+	height:200px;
+	margin-top:50px;
+}
+.content{
+	float:left;
+	width:150px;
+	height:200px;
+}
+.keyframes a{
+	display:inline-block;
+	float:right;
+	width:20px;
+	height:20px;
+	text-decoration: none;
+	background: #ccc;
+	color:#fff;
+	margin-right:2px;
+	text-align: center;
+	margin-top:180px;
+}
+
+@keyframes changecolor{
+	0%{
+		background:green;
+	}
+	50%{
+		background:green;
+	}
+	100%{
+		background: blue;
+	}
+}
+@keyframes con{
+	0%{
+		background:green;
+	}
+	50%{
+		background: blue;
+	}
+	100%{
+		background: none;
+	}
+}
+.keyframes{
+	animation:changecolor 5s ease-out .1s;
+	animation-iteration-count:infinite;
+}
+.content{
+	animation:con 5s ease-out .1s;
+	animation-iteration-count:infinite;
+}

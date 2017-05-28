@@ -1,0 +1,544 @@
+body,p,h1,h2,h3,input,form,ul,ol,dl{
+	padding:0;
+	margin:0;
+}
+li{
+	list-style:none;
+}
+img,input{
+	border:none;
+}
+a{
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+#title{
+	width:1280px;
+	margin:0 auto;
+	border:1px solid #999;
+}
+.header{
+	width:1280px;
+	height:56px;
+	background:url(../images/logo.png) no-repeat 60px 14px;
+}
+.header .logo{
+	float:left;
+	font:normal 21px/56px "黑体";
+	margin-left:102px;
+}
+.header .nav{
+	float:left;
+	width:546px;
+	margin-left:523px;
+}
+.nav li{
+	float:left;
+	margin-right:14px;
+}
+.nav a{
+	display:inline-block;
+	padding:18px 16px 22px 16px;
+	font:normal 14px "Microsoft YaHei";
+	color:#999;
+}
+.nav .entry{
+	background: url(../images/entry.png) no-repeat 0 20px;
+	margin-right:0;
+}
+.entry a{
+	color:#ff6666;
+}
+.nav a:hover{
+	color:#ff6666;
+	text-decoration: none;
+	background: url(../images/header-underline.png) no-repeat 12px 54px;
+}
+.nav-top{
+	color:#ff6666;
+	background:url(../images/header-underline.png) no-repeat 0 54px;
+}
+.nav-top a:hover{
+	background: none;
+}
+.sup{
+	height:692px;
+	width:1280px;
+	background:url(../images/图一.png) no-repeat;
+}
+.sup .opa{
+	height:692px;
+	width:1280px;
+	background: url(../images/图一遮罩.png) no-repeat;
+}
+.slogan{
+	width:458px;
+	height:264px;
+	padding:229px 0 0 116px;
+}
+.slogan .English{
+	font:normal 60px "Microsoft YaHei";
+	color:#fff;
+	padding-bottom:21px;
+}
+.slogan .chinese p{
+	font:normal 21px "Microsoft YaHei";
+	color:#fff;
+	line-height: 36px;
+}
+.slogan .chinese{
+	padding-bottom:58px;
+}
+.slogan .taste{
+	
+}
+.taste button{
+	height:64px;
+	width:332px;
+	background: #ff6666;
+	font:normal 30px "Microsoft YaHei";
+	color:#fff;
+	border:none;
+}
+
+.direction{
+	height:258px;
+	width:1280px;
+	padding-top:48px;
+}
+.direction-logo{
+	text-align: center;
+}
+.direction-logo img{
+	padding-bottom:45px
+}
+.direction-logo,.direction-chinese td{
+	width:322px;
+}
+.direction-chinese td{
+	text-align: center;
+	border-right:2px solid #999;
+}
+.direction-chinese p{
+	width:154px;
+	margin-left:80px;
+	font:normal 14px "SimSun";
+	text-align:center;
+	color:#666;
+	height:53px;
+}
+.direction-chinese .o{
+	border:none;
+}
+
+.question{
+	height:360px;
+	width:1280px;
+	margin-top:-54px;
+	background:url(../images/question-bg.png) repeat-x;
+}
+.question-logo{
+	width:1280px;
+	height:360px;
+	background: url(../images/question-logo.png) no-repeat 595px 90px;
+}
+.question-logo div{
+	font:normal 54px "SimSun";
+	color:#999;
+	padding:229px 0 0 218px;
+}
+
+.address{
+	width:1280px;
+	height:342px;
+	background: url(../images/看地图.png) no-repeat;
+}
+.address-1{
+	width:1280px;
+	height:342px;
+	background: url(../images/图二遮罩.png) no-repeat;
+}
+.address-ch{
+	width:336px;
+	height:98px;
+	margin:0 auto;
+	padding-top:42px;
+	color:#fff;
+}
+.address-ch-1{
+	font:normal 21px "Microsoft YaHei";
+	line-height: 43px;
+	text-align:center;
+}
+
+.address-ch-2{
+	font:normal 12px "Microsoft YaHei";
+	line-height: 52px;
+}
+.address .select{
+	width:1030px;
+	height:36px;
+	padding:33px 126px 0 ;
+}
+.address select{
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	width:236px;
+	height:36px;
+	font:normal 12px "Microsoft YaHei";
+	color:#333;
+	padding-right:14px;
+	border:none;
+	background: url(../images/按钮-1.png) no-repeat;
+	margin-right:20px;
+	text-indent: 12px
+}
+.address option{
+	background: #ccc;
+	text-indent:34px;
+}
+.address option:hover{
+	background:#ff6666;
+	color:#fff;
+}
+.address button{
+	border:none;
+	font:normal 14px "Microsoft YaHei";
+	width:236px;
+	height:36px;
+	background:#ff6666;
+	color:#fff;
+}
+.address button p{
+	word-spacing: 26px;
+}
+.active img{
+	vertical-align: top;
+}
+.active{
+	width:1280px;
+	height:606px;
+	padding-top: 101px;
+	background:url(../images/active-bg.png) repeat-x;
+}
+.active-0{
+	width:1008px;
+	height:390px;
+	margin:0 auto;
+}
+.active-0 div{
+	float:left;
+	height:390px;
+	width:210px;
+	margin-right:40px;
+}
+.active-0 .hk{
+	margin-right:0;
+}
+.active-0 img{
+	padding:12px 10px;
+	background: #fff;
+	border:1px solid #ccc;
+}
+.active-0 .active-name{
+	padding:10px 0;
+	text-align: center;
+	font:normal 14px "Microsoft YaHei";
+}
+.active-0 .active-add{
+	font:normal 10px "Microsoft YaHei";
+	line-height: 10px;
+	text-align: center;
+	color:#ccc;
+}
+.active-sh{
+	font:normal 19px "Microsoft YaHei";
+	letter-spacing:32px;
+	position: relative;
+	left:20px;
+}
+.active-sha{
+	font:normal 10px "Microsoft YaHei";
+	color:#ccc;
+	text-align: center;
+	margin:6px 0;
+}
+
+.detailed{
+	width:1280px;
+	height:566px;
+	background:url(../images/deta-bg.png) no-repeat;
+	margin-top:-102px;
+
+}
+.deta-title{
+	height:566px;
+	width:582px;
+	padding:130px 0px 0px 240px;
+	color:#fff;
+	float:left;
+}
+.deta-title .title-1{
+	font:normal 50px "Microsoft YaHei";
+	padding-left:112px;
+}
+.deta-title .title-2{
+	font:normal 158px "Microsoft YaHei";
+	line-height: 130px;
+}
+.deta-title .title-3{
+	font:normal 22px "Microsoft YaHei";
+	line-height: 60px;
+	padding-left:112px;
+}
+.deta-title .title-4{
+	font:normal 22px "Microsoft YaHei";
+	padding-left:112px;
+}
+.detailed .deta-deta{
+	width:288px;
+	height:274px;
+	float:left;
+	padding:166px 0px 0px 92px;
+}
+.deta-deta h2{
+	text-align: center;
+	margin-bottom:20px;
+}
+.deta-deta h2 .deta-1{
+	display:inline-block;
+	font-style: italic;
+	font-weight:normal;
+	color:#999;
+	width:22px;
+}
+.deta-deta h2 .deta-2{
+	color:#ff6666;
+}
+.deta-deta p{
+	font:normal 12px "宋体";
+	line-height:32px;
+	color:#999;
+}
+.deta-deta button{
+	width:102px;
+	height:32px;
+	font:normal 12px "Microsoft YaHei";
+	border:2px solid #ff6666;
+	color:#ff6666;
+	background: #fff;
+	margin:45px 0px 0px 92px;
+}
+.deta-deta .input{
+	padding:25px 0px 0px 120px;
+}
+
+.love{
+	width:1280px;
+	height:522px;
+	margin-top:-1px;
+	background:url(../images/love-bg.png) no-repeat 852px 0px;
+}
+.love .love-red,.love-white{
+	width:425px;
+	height:522px;
+	float:left;
+	font:normal 21px "SimSun";
+}
+.love-red{
+	margin-left:-823px;
+	background: #ff6666;
+	color:#fff;
+}
+.love-red p{
+	text-align: center;
+
+}
+.love-title{
+	padding-top:167px;
+}
+.love-line{
+	padding-top:10px;
+}
+.love-red button{
+	width:170px;
+	height:42px;
+	margin:16px 0px 0px 130px;
+	border:1px solid #fff;
+	background: #ff6666;
+	font:normal 21px "SimSun";
+	color:#fff;
+}
+
+
+
+.love-white{
+	margin-left:-398px;
+}
+.love-white p{
+	text-align: center;
+
+}
+.love-title{
+	padding-top:167px;
+}
+.love-line{
+	padding-top:10px;
+}
+.love-white button{
+	width:170px;
+	height:42px;
+	margin:16px 0px 0px 130px;
+	border:1px solid #ff6666;
+	background: #fff;
+	font:normal 21px "SimSun";
+	color:#ff6666;
+}
+
+
+.mutual{
+	width:1280px;
+	height:750px;
+}
+.mutual-deta{
+	width:420px;
+	height:90px;
+	margin:0 auto;
+	padding-top:110px;
+}
+.mutual-title{
+	font:normal 21px "SimSun";
+	line-height:40px;
+	padding-left: 127px;
+}
+.deta-content1{
+	font:normal 12px "Microsoft YaHei";
+	color:#999;
+	margin-left:20px;
+}
+.deta-content2{
+	font:normal 12px "Microsoft YaHei";
+	color:#999;
+	padding-left:60px;
+}
+.mutual-regulation{
+	width:292px;
+	height:280px;
+	margin-top:106px;
+	margin-left:138px;
+}
+.regulation-title{
+	font:normal 14px "SimSun";
+	color:996666;
+	margin-bottom:30px; 
+}
+.regulation-content{
+	font:normal 12px "宋体";
+	color:#666;
+
+}
+.mutual-button{
+	font:normal 12px "宋体";
+	color:#666;
+	margin-left:244px;
+	border:none;
+	background: #fff;
+	margin-bottom: 38px;
+}
+
+.mutual-mutual{
+	width:652px;
+	height:280px;
+	float:right;
+	margin:-280px 132px 0px 0px;
+}
+.mutual-mutual table{
+	border-collapse:collapse;
+}
+.mutual-mutual input{
+	height:40px;
+	width:310px;
+	background: #ccc;
+	font:normal 12px "宋体";
+}
+.mutual-mutual td{
+	border:18px solid #fff;
+}
+.mutual-mutual textarea{
+	width:640px;
+	height:120px;
+	background: #ccc;
+}
+.mutual-mutual button{
+	border:none;
+	background: #ccc;
+	width:640px;
+	height:42px;
+}
+
+.footer1{
+	height:360px;
+	width:1280px;
+	background:url(../images/footer1-bg.png) repeat-x;
+}
+.footer1-1{
+	width:510px;
+	height:195px;
+	padding:90px 0px 0px 386px;
+	color:#fff;
+	text-align: center;
+}
+.footer1-1 h3{
+	margin-bottom:10px;
+}
+.footer1-1 p{
+	font:normal 12px "宋体";
+	line-height:18px;
+}
+.footer1-1 input{
+	width:430px;
+	height:40px;
+	border:none;
+	color:#ccc;
+	margin-top:28px;
+}
+.footer1-1 button{
+	width:78px;
+	height:40px;
+	color:#fff;
+	background: #666;
+	border:none;
+	margin-top:28px;
+}
+.footer1-2{
+	width:210px;
+	height:26px;
+	margin:-20px 0px 0px 550px;
+}
+.footer1-2 img{
+	margin-right:20px;
+}
+
+.footer2{
+	height:58px;
+	width:1280px;
+	background: url(../images/footer2-bg.png) repeat-x;
+	margin-top:-2px;
+	color:#fff;
+}
+.footer2 p{
+	display: inline-block;
+	font:normal 12px "宋体";
+	padding:32px 0px 0px 100px;
+}
+.footer2 a{
+	display: inline-block;
+	width:68px;
+	font:normal 12px "宋体";
+	color:#fff;
+	padding:32px 0px 0px 0px;
+	margin-left:1012px;
+}
