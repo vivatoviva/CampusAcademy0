@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>demo</title>
+    <style type="text/css">
+    @keyframes marginLeft{
+        0%{margin-left: 0;}
+        28.5%{margin-left: 0;}
+        33.3%{margin-left: -400px;}
+        62%{margin-left: -400px;}
+        66.7%{margin-left: -800px;}
+        95.2%{margin-left: -800px;}
+        100%{margin-left: 0;}
+    }
+
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        border:0;
+    }
+    ol, ul ,li{list-style: none;}
+        tbody tr:first-child td{
+            background-color: #000;
+            color:#fff;
+        }
+        tbody tr:nth-of-type(2n-1){
+            background-color:#707070;
+        }
+        tbody tr:nth-of-type(2),tbody tr:nth-of-type(3),tbody tr:nth-of-type(4){
+            color: red;
+        }
+        input {
+            width:300px;
+            height: 30px;
+            outline:1px solid #000;
+            border:0;
+            transition: all .6s ease;
+            display: block;
+            margin:0 auto;
+        }
+        input:focus {
+            width:400px;
+            outline:2px solid blue;
+        }
+        .banner{
+            width:400px;
+            height:200px;
+            position: relative;
+            overflow:hidden;
+        }
+        .box {
+            width:1200px;
+            transition: all .5s ease;
+            /* -webkit-animation: marginLeft 4s ease infinite;
+            -o-animation: marginLeft 4s ease infinite;
+            animation: marginLeft 4s ease infinite; */
+        }
+        .box div {
+            width:400px;
+            height: 200px;
+            float:left;
+            transition: all .5s ease;
+        }
+        .items1{
+            background-color: red;
+        }
+        .items2{
+            background-color: blue;
+        }
+        .items3 {
+            background-color: yellow;
+        }
+        span {
+            display:block;
+            width:20px;
+            height: 20px;
+            margin:10px;
+            position: absolute;
+            bottom:0;
+            right:0;
+            border:1px solid #000;
+            text-align:center;
+            cursor:pointer;
+
+        }
+        span:hover{
+            background-color: #fff;
+        }
+        .s1{
+            margin-right:100px;
+
+        }
+        .s2{
+            margin-right:70px;
+        }
+        .s3{
+            margin-right:40px;
+        }
+        .s1:hover ~ .box {
+            margin-left:0px;
+        }
+        .s2:hover ~ div.box{
+            margin-left:-400px;
+        }
+        .s3:hover~.box {
+            margin-left:-800px;
+        }
+
+    </style>
+</head>
+<body>
+     <table>
+         <tbody>
+             <tr>
+                 <td>排名</td>
+                 <td>网站</td>
+                 <td>热度</td>
+             </tr>
+             <tr>
+                 <td>1.</td>
+                 <td>百度前端技术学院</td>
+                 <td>1300</td>
+             </tr>
+             <tr>
+                 <td>2.</td>
+                 <td>百度前端技术学院</td>
+                 <td>1300</td>
+             </tr>
+             <tr>
+                 <td>3.</td>
+                 <td>百度前端技术学院</td>
+                 <td>1300</td>
+             </tr>
+             <tr>
+                 <td>4.</td>
+                 <td>百度前端技术学院</td>
+                 <td>1300</td>
+             </tr>
+             <tr>
+                 <td>5.</td>
+                 <td>百度前端技术学院</td>
+                 <td>1300</td>
+             </tr>
+         </tbody>
+     </table>
+      <input type="text" name="">
+      <div class="banner">
+        <span class="s1">1</span>
+        <span class="s2">2</span>
+       <span class="s3">3</span>
+        <div class="box">
+
+            <div class="items1"></div>
+
+            <div class="items2"></div>
+
+            <div class="items3"></div>
+        </div>
+
+      </div>
+</body>
+</html>
