@@ -1,0 +1,664 @@
+/*
+* @Author: Marte
+* @Date:   2017-06-01 11:19:40
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-06-04 00:59:28
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    border:0;
+}
+ol, ul ,li{list-style: none;}
+body>div {
+	    min-width: 1219px;
+}
+.header {
+    width:100%;
+    height: 70px;
+    position: fixed;
+    min-width: 1219px;
+    background-color: #fff;
+    z-index: 100;
+}
+.header>div{
+    width:1200px;
+    height:70px;
+    margin: 0 auto;
+    position: relative;
+}
+.header img {
+    float: left;
+    display: black;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+.header nav {
+    float: right;
+    width: 930px;
+}
+.header nav>ul>li{
+    position: relative;
+    float:left;
+    padding-left: 16px;
+    padding-right: 16px;
+    line-height: 70px;
+    position: relative;
+    list-style-type: none;
+}
+.header nav>ul>li>a {
+	-webkit-transition: all .2s ease-in-out;
+	   -moz-transition: all .2s ease-in-out;
+	    -ms-transition: all .2s ease-in-out;
+	     -o-transition: all .2s ease-in-out;
+	        transition: all .2s ease-in-out;
+}
+.header nav>ul>li:nth-of-type(1){
+    padding-right: 35px;
+    padding-left: 0px;
+}
+.header nav>ul>li:last-child::after{
+    visibility: hidden;
+}
+.header nav>ul>li::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    right:0;
+    top:30px;
+    width:1px;
+    height:13px;
+    background-color: #e6e6e6;
+
+}
+.header nav>ul>li>a{
+    display: block;
+    width:100%;
+    text-align: center;
+    font-size: 18px;
+    color: #727272;
+    text-decoration: none;
+}
+.header nav ul ul {
+	background-color: #fafafa;
+    padding-top: 13px;
+    border-top:2px solid #779fd1;
+    position: absolute;
+    top:70px;
+    width:156px;
+    left:-18px;
+    opacity: 0;
+    -webkit-transition: all .25s ease-in-out;
+       -moz-transition: all .25s ease-in-out;
+        -ms-transition: all .25s ease-in-out;
+         -o-transition: all .25s ease-in-out;
+            transition: all .25s ease-in-out;
+}
+.header nav ul ul li a {
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+	    -ms-transition: all .25s ease;
+	     -o-transition: all .25s ease;
+	        transition: all .25s ease;
+}
+.header nav ul ul li:hover a{
+	color:#779fd1;
+	text-indent: 13px;
+	background-image:url("images/_ .png");
+	background-repeat: no-repeat;
+	background-position:42px 8px;
+}
+.header nav ul>li:hover  ul {
+	opacity: 1;
+}
+nav ul>li:hover a {
+		color: #779fd1;
+}
+.click{
+	background-image: url("images/10px下拉小角上.png");
+	background-repeat: no-repeat;
+	background-position:78px 32px;
+
+}
+.click_first{
+    background-position: 93px 32px;
+}
+.click:hover {
+	background-image: url("images/10px下拉打开小角下1.png");
+}
+.header nav ul ul li{
+    width:100%;
+    line-height:30px;
+
+}
+.header nav ul ul li a {
+    display:block;
+    width:100%;
+    text-align: center;
+    font-size: 18px;
+    color: #727272;
+    text-decoration: none;
+}
+.banner {
+	width:100%;
+    padding-top: 70px;
+    position: relative;
+    overflow:hidden;
+}
+.banner:hover::after{
+	opacity:1;
+}
+.banner:after {
+	content:" .";
+	display: block;
+	position: relative;
+	width:100%;
+	height:100%;
+	background-image: url("images/遮罩12.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity:0;
+	-webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+	    -ms-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
+	z-index:1;
+}
+.box{
+	width:600vw;
+	min-width:7314px;
+	position: relative;
+}
+.box img {
+	width:100vw;
+	min-width:1219px;
+	height: auto;
+	float: left;
+}
+#img{
+	position: absolute;
+	width:1179px;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-25%);
+	top: 260px;
+	opacity: 0;
+	transition: all .5s ease;
+	z-index:2;
+}
+
+ #btn {
+	position: absolute;
+	width:156px;
+	left:50%;
+	transform: translateX(-50%);
+	bottom: 100px;
+	z-index:2;
+}
+ #btn ul li {
+	float:left;
+	width:20px;
+	height:20px;
+	border:1px solid #fff;
+	border-radius:50%;
+	margin:8px;
+	cursor:pointer;
+}
+ #btn ul li.on {
+	background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.banner:hover #img {
+	opacity: 1;
+}
+#img {
+	position: absolute;
+}
+#img img{
+	float: right;
+	transition: all .5s ease;
+	cursor: pointer;
+}
+#img img:nth-child(1){
+	float:left;
+}
+#img img:hover {
+	width:40px;
+	height: 40px;;
+}
+.clearfixed:after {
+	width:"";
+	display: table;
+	clear: both;
+}
+.music {
+	width:100%;
+	background-color: #f5f5f5;
+	padding-bottom: 83px;
+}
+.music .go {
+	padding-top: 62px;
+	width: 775px;
+	height: 120px;
+	margin:0 auto;
+}
+.go p{
+	width:340px;
+	display: inline-block;
+	color: #888888;
+	font-size: 16px;
+	line-height: 37px;
+}
+.go p:nth-of-type(1){
+	padding-left: 50px;
+	padding-right: 20px;
+}
+.say{
+	width:915px;
+	height: 440px;
+	border-radius: 8px;
+	background-color: #fff;
+	box-shadow: 0px 0px 15px #e2e2de;
+	margin: 0 auto;
+}
+.say #left{
+	float: left;
+	width:436px;
+	margin-left: 105px;
+	position: relative;
+	top: 36px;
+	padding-right: 51px;
+	border-right: 1px dashed #dedede;
+
+}
+.say #left p{
+	font-size: 21px;
+	font-weight: bold;
+	text-indent: -20px;
+	padding-bottom: 23px;
+}
+.say #left span {
+	color: #6e9dd5;
+	font-size: 18px;
+}
+.say #left div {
+	padding-top: 33px;
+	font-size: 18.67px;
+	color: #888888;
+	letter-spacing: 1px;
+	text-align: left;
+	padding-bottom: 42px;
+	line-height: 30px;
+}
+.say #left div + span{
+	display: block;
+	color: #333333;
+	font-size: 16px;
+	padding-left: 40px;
+    background-image: url("images/日历.png");
+    background-repeat: no-repeat;
+ 	line-height: 25px;
+}
+.say ul {
+	float: left;
+	width:195px;
+	height: 161px;
+	padding-left: 37px;
+	padding-top: 44px;
+}
+.say ul li {
+	color: #888888;
+	text-indent: 14px;
+	font-size: 16px;
+	line-height: 30px;
+	cursor:pointer;
+}
+.say ul .first{
+	text-indent: 0;
+	font-size: 21px;
+	color: #2f2f2f;
+	margin-bottom: 19px;
+}
+.stop {
+	background-image: url("images/播放1-点击时.png");
+	background-repeat: no-repeat;
+	background-position: 0 7px;
+}
+
+.start {
+	background-image: url("images/矩形 3 副本.png");
+	background-repeat: no-repeat;
+	background-position: 0 7px;
+}
+.active {
+	background-color: #fff;
+}
+.active #content {
+	width:1210px;
+	height: 438px;
+	padding-top: 60px;
+	margin: 0 auto;
+	padding-bottom: 90px;
+}
+.active #content p{
+	font-style: bold;
+	font-size: 24px;
+	color: #464646;
+}
+.active #content>p:after {
+	content:"共享主爱";
+	font-size: 16px;
+	color: #5c5c5c;
+	text-indent: 20px;
+}
+#content>div {
+	width: 275px;
+	height: 370px;
+	position: relative;
+	margin-top: 40px;
+	float: left;
+	overflow: hidden;
+	outline:2px solid #eeeeee;
+	cursor: pointer;
+	margin-left: 34px;
+}
+#content #active_1{
+	margin-left: 0;
+}
+#content>div:hover {
+	box-shadow: 0px 0px 15px #bbbab9;
+}
+#content>div:hover figcaption{
+	opacity: 1;
+}
+#content div figcaption{
+	opacity: 0;
+	position: absolute;
+	top:0px;
+	width:100%;
+	height: 217px;
+	background-color: rgba(0,0,0,.7);
+	color: #fff;
+	font-size: 14px;
+	box-sizing: border-box;
+	padding-top: 73px;
+	padding-left: 30px;
+	padding-right: 30px;
+	letter-spacing: 5px;;
+	text-align: left;
+	transition: all .6s ease;
+}
+#content div figcaption:before{
+	content:"";
+	display:block;
+	width:36px;
+	height: 6px;
+	background-color: #fff;
+	position: relative;
+	top:-18px;
+}
+#content div figcaption:after{
+	content:"(历代志下 7:14 )";
+	position: relative;
+	display: block;
+	top:12px;
+	left:100px;
+	letter-spacing: 0;
+}
+#detail{
+	margin-top: 23px;
+	margin-left: 17px;
+	position: relative;
+}
+#content div p{
+	font-size: 18px;
+	margin-bottom: 30px ;
+}
+#content div span {
+	font-size: 16px;
+	color: #5c5c5c;
+	line-height: 10px;
+}
+
+#detail span:nth-of-type(2){
+	color: #464646;
+	font-weight: bolder;
+}
+#detail span:nth-of-type(4){
+	color: #464646;
+	font-weight: bolder;
+	text-indent: 10px;
+}
+#detail button{
+	position: absolute;
+	top:0;
+	border:0;
+	background-color: #fff;
+	outline: 0;
+	cursor: pointer;
+}
+#funcs{
+	width:1444px;
+	height: 820px;
+	margin:0 auto;
+	position: relative;
+	top:-90px;
+	background-color: #fff;
+	overflow: hidden;
+}
+#funcs>p{
+	font-size: 27px;
+	color: #464646;
+	width:232px;
+	margin: 0 auto;
+	font-weight: bolder;
+	padding-top: 64px;
+	padding-bottom: 42px;
+}
+#funcs span {
+	display:block;
+	width:886px;
+	margin:0 auto;
+	font-size: 18px;
+	letter-spacing: .6px;
+	line-height: 35px;
+}
+#funcs .boxs{
+	display: block;
+	width:886px;
+	padding-top: 91px;
+	margin: 0 auto;
+}
+#funcs .boxs div {
+	width:156px;
+	height: 219px;
+	float: left;
+	cursor: pointer;
+	margin-left: 202px;
+	padding-bottom: 57px;
+
+}
+#funcs .boxs .funcs_1  , #funcs .boxs .funcs_4{
+	margin-left: 0;
+}
+#funcs div p{
+	padding-top: 20px;
+	padding-bottom: 11px;
+	font-size: 21px;
+	width:90px;
+	font-weight: bolder;
+	margin: 0 auto;
+
+}
+#funcs div:hover>p {
+	border-bottom: 6px solid #000;
+}
+.discuss{
+	background-color: #f5f5f5;
+	padding-top: 65px;
+	padding-bottom: 180px;
+}
+#discuss {
+	width:1200px;
+	overflow: hidden;
+	margin:0 auto;
+}
+#discuss>p{
+	font-size: 24px;
+	color: #464646;
+	padding-bottom: 65px;
+}
+#discuss>p:after{
+	content: "信仰的眼光";
+	font-size: 16px;
+	color: #5c5c5c;
+	position:relative;
+	left:6px;
+}
+#discuss>div{
+	background-color: #fff;
+	overflow: hidden;
+}
+#discuss>div{
+	width:371px;
+	height: 561px;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin-left: 40px;
+}
+#discuss>div.discuss_1{
+	margin-left: 0;
+}
+#discuss>div .text{
+	width:327px;
+	margin:0 auto;
+	margin-top:48px;
+}
+#discuss>div .text p:nth-child(1){
+	font-size: 21px;
+	font-weight: bolder;
+}
+#discuss>div .text p:nth-child(2){
+	font-size: 16px;
+	color: #5c5c5c;
+	line-height: 47px;
+}
+#discuss>div .text p:nth-child(3){
+	font-size: 18px;
+	color: #5c5c5c;
+	line-height: 30px;
+}
+#discuss>div>div>div{
+	height: 40px;
+	padding-top: 34px;
+	position: relative;
+}
+#discuss>div>div>div span {
+	display: inline-block;
+	font-size: 16px;
+	color: #5c5c5c;
+	position: relative;
+	top:-13px;
+	line-height: 40px;
+}
+#discuss>div>div .img{
+	display: inline-block;
+	width:40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #000;
+}
+#discuss button {
+	width:78px;
+	line-height: 28px;
+	text-align: center;
+	top:40px;
+	right:0px;
+	border:1px solid  #888888;
+	color: #888888;
+	border-radius: 4px;
+	background-color: #fff;
+	outline: 0;
+	cursor: pointer;
+	position: absolute;
+}
+footer {
+	    min-width: 1219px;
+	    background-color: #444343;
+	    height:386px;
+}
+footer .text{
+	padding-top: 80px;
+	width:700px;
+	margin:0 auto;
+}
+footer .text ul {
+	margin-bottom: 100px;
+}
+footer .text ul li{
+	float: left;
+	padding:13px;
+	position: relative;
+}
+footer .text ul li:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top:18px;
+	right: -2px;
+	width:4px;
+	height:14px;
+	background-color: #bebebe;
+}
+footer .text ul li:last-child:after{
+	opacity: 0;
+}
+footer .text ul li:nth-of-type(1){
+	padding-left: 0;
+}
+footer .text ul li:last-child{
+	padding-right: 0;
+}
+footer .text ul li a {
+	color: #858585;
+	text-decoration: none;
+	font-size: 18px;
+}
+footer .text p {
+	text-align: center;
+	color: #999999;
+	font-size: 18.67px;
+	padding-bottom: 10px;
+}
+audio {
+	background-color: red;
+	position:fixed;
+	float:right;
+	buttom:0;
+	left:0;
+	z-index:100;
+}
+
