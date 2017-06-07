@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-06-03 13:41:10
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-06-04 13:19:30
+* @Last Modified time: 2017-06-07 14:12:55
 */
 
     window.onload = function() {
@@ -12,6 +12,7 @@
             btnleft = document.getElementById('btn_left'),                  //左按钮
             btnright = document.getElementById('btn_right'),                //右按钮
             list = document.getElementById('btn').getElementsByTagName('li'),//下面的index；
+            btn = document.getElementById('btn'),
             index = 1 ,                                                      //用于判断到第几张图片
             pos = 0,
             timer = null,
@@ -78,6 +79,22 @@
                 anitim(target);
             },20)
         }
+        /*btn.onclick = function(){
+            var tar = event.target;
+            if(tar = list[0]){
+                    alert("0")
+            }
+            if(tar = list[1]){
+                    alert("1")
+            }
+            if(tar = list[2]){
+                    alert("2")
+            }
+            if(tar = list[3]){
+                    alert("3")
+            }
+
+        }*/
         for(var a = 0;a<list.length;a++){
             (function(a){
                 list[a].onclick=function(){
