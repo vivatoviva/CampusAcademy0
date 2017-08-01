@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>定时器效果</title>
+    <style type="text/css">
+        span {
+            font-size:25px;
+        }
+        #second{
+            font-size:35px;
+        }
+        ul li{
+            list-style-type: none;
+        }
+        #timeDisplay{
+            margin-top:20px;
+            width:205px;
+            height:205px;
+            border:1px solid #101010;
+            border-radius:50%;
+            margin-left:60px;
+        }
+        #timeDisplay div {
+            padding:10px;
+            position: relative;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+        }
+        button{
+            border:0;
+            outline:0;
+            cursor:pointer;
+            width:100px;
+            height:30px;
+            border-radius:0px 0px 55px 55px;
+            transition:all ease .5s ;
+        }
+        button:hover{
+            background-color: #101010;
+            color:#fff;
+        }
+        #jieguo{
+            margin-left:50px;
+        }
+    </style>
+</head>
+<body>
+    <button id="go">开始计时</button>
+    <button id="stop">暂停计时</button>
+    <button id="reset">重新计时</button>
+    <div id="timeDisplay">
+    <div>
+       <span id="hourse">00</span>时
+        :<span id="minte">00</span>分
+        :<span id="second">00</span>秒
+    </div>
+
+    </div>
+    <div id="jieguo">
+    <ol type="A">
+    </ol>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

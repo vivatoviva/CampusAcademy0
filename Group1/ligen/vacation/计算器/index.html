@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>计算器</title>
+    <style type="text/css">
+* {
+    margin: 0;
+    padding: 0
+}
+
+img {
+    border: 0
+}
+
+ol,
+ul,
+li {
+    list-style: none
+}
+
+td {
+    width: 100px;
+    height: 50px
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    cursor: pointer
+}
+
+button:hover {
+    font-weight: 900
+}
+
+div#display {
+    width: 405px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid black;
+    font-size: 25px;
+    transition: all .5s ease
+}
+
+div#process {
+    width: 405px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 15px
+}
+    </style>
+</head>
+<body>
+        <div>
+        <div id="process">
+        </div>
+           <div id="display">
+
+           </div>
+           <table cellpadding="5" cellpadding="5">
+                 <tbody>
+                     <tr>
+                         <td><button value="(" class="str">(</button></td>
+                         <td><button value=")" class="str">)</button></td>
+                         <td><button value="%" class="str">%</button></td>
+                         <td><button value="clear" class="fun" id="clear">AC</button></td>
+                     </tr>
+                     <tr>
+                         <td><button value="7" class="str">7</button></td>
+                         <td><button value="8" class="str">8</button></td>
+                         <td><button value="9" class="str">9</button></td>
+                         <td><button value="÷" class="str">÷</button></td>
+                     </tr>
+                     <tr>
+                         <td><button value="4" class="str">4</button></td>
+                         <td><button value="5" class="str">5</button></td>
+                         <td><button value="6" class="str">6</button></td>
+                         <td><button value="×" class="str">×</button></td>
+                     </tr>
+                     <tr>
+                         <td><button value="1" class="str">1</button></td>
+                         <td><button value="2" class="str">2</button></td>
+                         <td><button value="3" class="str">3</button></td>
+                         <td><button value="-" class="str">-</button></td>
+                     </tr>
+                     <tr>
+                         <td><button value="0" class="str">0</button></td>
+                         <td><button value="." class="str">.</button></td>
+                         <td><button value="=" class="fun" id="equal">=</button></td>
+                         <td><button value="+" class="str">+</button></td>
+                     </tr>
+
+                 </tbody>
+             </table>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>

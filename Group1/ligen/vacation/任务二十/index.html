@@ -1,0 +1,71 @@
+<!-- 基于任务18进行升级
+将新元素输入框从input改为textarea
+允许一次批量输入多个内容，格式可以为数字、中文、英文等，可以通过用回车，逗号（全角半角均可），顿号，空格（全角半角、Tab等均可）等符号作为不同内容的间隔
+增加一个查询文本输入框，和一个查询按钮，当点击查询时，将查询词在各个元素内容中做模糊匹配，将匹配到的内容进行特殊标识，如文字颜色等。举例，内容中有abcd，查询词为ab或bc，则该内容需要标识 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>任务十八</title>
+    <style type="text/css" media="screen">
+        button {
+            width:100px;
+            height:50px;
+            background-color: #fff;
+            color:#000;
+            text-align:center;
+            transition:all .3s ease;
+            border:1px solid #CC0066 ;
+
+        }
+        button:hover {
+            background-color: #000;
+            color:#fff;
+            border:1px solid #660099;
+        }
+        input[type=text]{
+            width:315px;
+            height:50px;
+            border:1px solid #1212;
+        }
+        textarea{
+            width:425px;
+            height:150px;
+            margin-top:20px;
+        }
+        ul li{
+            list-style:none;
+            padding:15px;
+            margin-top:10px;
+            height:50px;
+            background-color: red;
+            color:#fff;
+            text-align:center;
+            font-size:30px;
+            float:left;
+            margin-left:20px;
+            position: relative;
+            padding-top:10px;
+            box-sizing:border-box;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <textarea name="inputText">
+
+    </textarea>
+    <br>
+    <button id="leftEnter">左侧入</button>
+    <button id="rightEnter">右侧入</button>
+    <button id="leftDel">左側出</button>
+    <button id="rightDel">右侧出</button>
+    <br><br>
+    <input type="text" name="input" placeholder="模糊查询">
+    <button id="search">查询</button>
+    <ul id="boxs">
+    <li>1</li>
+    <li>2</li>
+    </ul>
+</body>
+</html>
