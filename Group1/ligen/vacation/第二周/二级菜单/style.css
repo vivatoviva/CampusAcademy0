@@ -1,0 +1,192 @@
+/*
+* @Author: Marte
+* @Date:   2017-08-02 11:16:26
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-08-02 21:06:06
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+img {
+    border: 0;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: red;
+}
+
+#menu {
+    background-color: #2B333B;
+    position: relative;
+    width: 216px;
+    height: 430px;
+    padding-top: 12px;
+    border-radius: 8px 0 0 8px;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+#menu>ul {
+
+    /*  margin-left: 12px; */
+    padding-left: 12px;
+    width: 205px;
+    height: 444px;
+}
+
+#menu>ul>li {
+    width: 100%;
+    line-height: 60px;
+    color: #B3B8BB;
+    font-size: 16px;
+    text-indent: 16px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    border-radius: 8px 0 0 8px;
+}
+
+#menu>ul>li:hover {
+    background-color: #6B7176;
+    cursor: pointer;
+    color: #fff;
+}
+
+#menu>ul>li.active{
+    background-color: #6B7176;
+    color: #fff;
+}
+#menu>ul>li>span {
+    float: right;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.page {
+    width: 730px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 216px;
+}
+
+.page>div {
+    padding: 40px;
+    padding-top: 32px;
+}
+
+.sort {
+    padding-bottom: 30px;
+}
+
+.title {
+    line-height: 30px;
+    font-weight: bold;
+    color: #07111b;
+    margin-bottom: 10px;
+}
+
+.sort span {
+    display: inline-block;
+    padding-right: 15px;
+    margin-bottom:10px;
+}
+
+.course ul li {
+    line-height: 28px;
+}
+
+.course ul li span {
+    background-color: #F3F5F7;
+    color: #4D555D;
+    font-size: 10px;
+    display: inline-block;
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.course ul li.type-1 >span {
+    background-color: #FDE6E4;
+    color: red;
+}
+
+.course ul li.type-1>a {
+    line-height: 28px;
+    color: red;
+}
+
+.course ul li a {
+    -webkit-transition: all .15s ease;
+    -moz-transition: all .15s ease;
+    -ms-transition: all .15s ease;
+    -o-transition: all .15s ease;
+    transition: all .15s ease;
+}
+.page{
+    display:none;  background-size: cover;
+}
+.page-1 {
+    background-image: url('http://www.imooc.com/static/img/home/feBg.png');
+
+
+
+}
+
+.page-2 {
+    background-image: url('http://www.imooc.com/static/img/home/backBg.png');
+
+}
+
+.page-3 {
+    background-image: url('http://www.imooc.com//static/img/home/mobileBg.png');
+}
+.page-4 {
+    background-image: url('http://www.imooc.com//static/img/home/dataBg.png');;
+
+}
+
+.page-5 {
+    background-image: url('http://www.imooc.com/static/img/home/bigdataBg.png');
+}
+
+.page-6 {
+    background-image: url('http://www.imooc.com/static/img/home/textBg.png');
+}
+.page-7 {
+        background-image: url('http://www.imooc.com//static/img/home/imgBg.png');
+    }
+
+#menu>ul>li:hover >div{
+    opacity:1;
+}
+@keyframes anima
+{
+0% {left:1100px;opacity:0;}
+50% {opacity:.3;}
+100% {left:216px;opacity:1;}
+}
+.target{
+    display:inline;
+    animation:anima .2s ease;
+}
+

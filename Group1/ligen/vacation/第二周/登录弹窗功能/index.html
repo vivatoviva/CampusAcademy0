@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>仿照知乎登录弹出层</title>
+    <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        border:0;
+    }
+    ol, ul ,li{list-style: none;}
+        #contain{
+            width:100vw;
+            height:100vh;
+            background-color: rgba(0, 0, 0, 0.6);
+            position: fixed;
+            top:0;
+            left:0;
+            display:none;
+        }
+        #login{
+            width:400px;
+            height:436px;
+            background-color: #fff;
+            margin:0 auto;
+            position: relative;
+            top:50%;
+            /* -webkit-transform: translateY(-50%);
+               -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                 -o-transform: translateY(-50%);
+                    transform: translateY(-50%); */
+            box-shadow:0px 0px 20px rgba(0,0,0,.7);
+        }
+        #login>div{
+            padding-left:24px;
+            padding-right:24px;
+            padding-bottom:32px;
+        }
+        .banner{
+            width:400px;
+            height:68px;
+            padding-top:24px;
+            padding-bottom:24px;
+            margin-left:-24px;
+            margin-right:-24px;
+            background-color: #0f88eb;
+        }
+        .banner>p:nth-of-type(1){
+            font-size:24px;
+            line-height:40.8px;
+            text-align:center;
+            color:#fff;
+        }
+        .banner>p:nth-of-type(2){
+            font-size:14px;
+            line-height:23.8px;
+            color:#fff;
+            text-align:center;
+
+        }
+    .content{
+        width:352px;
+        height:280.6px;
+        color:rgb(38,38,38);
+        font-size:15px;
+        line-height:25.5px;
+    }
+   #contain #login .content input{
+        display:block;
+        width:352px;
+        height:31.2px;
+        margin-top:16px;
+        padding-top:12px;
+        line-height:23.8px;
+        font-size:14px;
+        outline:0;
+        padding-bottom:12px;
+        border:0;
+        border-bottom:.1px solid black ;
+    }
+    .content>p:nth-of-type(1){
+        margin-top:16px;
+        float:left;
+    }
+    .content>p:nth-of-type(1) a{
+        text-decoration:none;
+        color:#175199;
+        padding-bottom:6px;
+    }
+    .content>p:nth-of-type(1) a:hover{
+        border-bottom:1px solid #175199;
+    }
+    .content>p:nth-of-type(2){
+        margin-top:16px;
+        float:right;
+    }
+    .content>p:nth-of-type(2) a{
+        text-decoration:none;
+        color:rgb(133, 144, 166);
+        padding-bottom:6px;
+    }
+button {
+    cursor: pointer;
+    margin-top: 32px;
+    width: 100%;
+    height: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: rgb(15, 136, 235);
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+}
+button:hover{
+    background-color: #0d79d1;
+}
+.others{
+    margin:0 auto;
+    margin-top:22px;
+    width:322px;
+    height:26.4px;
+}
+.others p{
+    display:inline-block;
+    padding-left:5px;
+    padding-right:5px;
+}
+.others p a{
+    text-decoration:none;
+    color:rgb(133, 144, 166);
+    text-align:center;
+}
+#close{
+    display:block;
+    width:16px;
+    height:16px;
+    position: absolute;
+    top:20px;
+    right:-50px;
+    background-image: url("http://oquq74tfk.bkt.clouddn.com/17-8-3/98531583.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    cursor:pointer;
+
+}
+.now{
+    width:100vw;
+    height:100vh;
+}
+@keyframes myfirst
+{
+0% {opacity:0;}
+
+100% {opacity:1;}
+}
+#contain.open{
+    display:inline;
+    -webkit-animation: myfirst .3s ease;
+       -moz-animation: myfirst .3s ease;
+        -ms-animation: myfirst .3s ease;
+         -o-animation: myfirst .3s ease;
+            animation: myfirst .3s ease;}
+@keyframes anima
+{
+0% {-webkit-transform: translateY(-30%);
+   -moz-transform: translateY(-30%);
+    -ms-transform: translateY(-30%);
+     -o-transform: translateY(-30%);
+        transform: translateY(-30%);}
+
+100% {-webkit-transform: translateY(-50%);
+   -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+     -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
+.anima{
+    -webkit-animation: anima .5s ease;
+       -moz-animation: anima .5s ease;
+        -ms-animation: anima .5s ease;
+         -o-animation: anima .5s ease;
+            animation: anima .5s ease;
+    transform: translateY(-50%);
+}
+/* @keyframes closeanima
+{
+0% {-webkit-transform: translateY(-50%);
+   -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+     -o-transform: translateY(-50%);
+        transform: translateY(-50%);}
+
+100% {-webkit-transform: translateY(-10%);
+   -moz-transform: translateY(-10%);
+    -ms-transform: translateY(-10%);
+     -o-transform: translateY(-10%);
+        transform: translateY(-10%);
+    }
+}
+.closeanima{
+    -webkit-animation: closeanima .5s ease;
+       -moz-animation: closeanima .5s ease;
+        -ms-animation: closeanima .5s ease;
+         -o-animation: closeanima .5s ease;
+            animation: closeanima .5s ease;
+} */
+</style>
+
+
+</head>
+<script type="text/javascript" src="script.js"></script>
+<body>
+
+<button>登录</button>
+
+<div id="contain" ">
+<div id="login" class="anima">
+<div>
+<span id="close"></span>
+    <div class="banner">
+        <p>登录知乎</p>
+        <p>与世界分享你的知识经验</p>
+    </div>
+    <div class="content">
+        <input type="text" name="phone" placeholder="手机号或者邮箱">
+        <input type="password" name="password" placeholder="密码">
+        <p><a href="#">手机验证码登录</a></p>
+        <p><a href="#">忘记密码？</a></p>
+        <br clear="both">
+        <button type="">登录</button>
+        <div class="others">
+            <p><a href="#">二维码登录</a></p>·<p><a href="#">海外手机登录</a></p>·<p><a href="#">社交账号登录</a></p>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

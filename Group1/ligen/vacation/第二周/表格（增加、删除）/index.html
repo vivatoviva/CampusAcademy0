@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>表格</title>
+    <style type="text/css">
+    table{
+        position: relative;
+        -webkit-transition: all .25s ease;
+           -moz-transition: all .25s ease;
+            -ms-transition: all .25s ease;
+             -o-transition: all .25s ease;
+                transition: all .25s ease;
+    }
+
+        caption{
+            background-color: #847f7f;
+            line-height:60px;
+        }
+        td{
+            padding-left:40px;
+            padding-right:40px;
+            height:30px;
+            font-size:20px;
+            text-align:center;
+        }
+        thead>tr>td{
+            padding:0;
+            text-align:center;
+            font-weight:blod;
+            font-size:20px;
+            background-color: #02fff6;
+
+        }
+        tr:nth-of-type(2n){
+            background-color: #c1c1c1;
+        }
+        input{
+            background-color: #006766;
+            border:0;
+            display:inline-block;
+            height:30px;
+            color:#fff;
+        }
+        .active{
+            padding:0;
+                    }
+        #menu{
+            position: absolute;
+            top:0;
+            z-index: 10;
+            display:none;
+            opacity:0;
+            border:4px solid black;
+            -webkit-transition: all .25s ease;
+               -moz-transition: all .25s ease;
+                -ms-transition: all .25s ease;
+                 -o-transition: all .25s ease;
+                    transition: all .25s ease;
+        }
+        #menu ul {
+            background-color: #fff;
+            list-style-type: none;
+            padding:0px;
+            margin:0;
+        }
+        #menu ul li {
+            text-align:center;
+            background-color: #c1c1c1;
+            padding-left:20px;
+            padding-right:20px;
+            border-bottom:1px solid black;
+            cursor:pointer;
+            font-size:15px;
+        }
+        #menu ul li:hover{
+            background-color: #fff;
+        }
+        @keyframes myfirst{
+            from{opacity:0;}
+            to{opacity:1;}
+        }
+        #menu.click{
+            display:inline;
+            animation: myfirst .5s;
+            opacity:1;
+        }
+        tbody tr{ cursor:pointer;
+            outline:5px solid rgba(0, 0, 0, 0.0);
+            -webkit-transition: all .5s ease;
+               -moz-transition: all .5s ease;
+                -ms-transition: all .5s ease;
+                 -o-transition: all .5s ease;
+                    transition: all .5s ease;
+        }
+        tbody tr:hover{
+            outline:5px solid red;
+        }
+        th
+    </style>
+</head>
+<script type="text/javascript" src="script.js">
+</script>
+<body>
+    <table  border="1" cellpadding="0">
+        <div id="menu" >
+            <ul>
+                <li>删除本行</li>
+                <li>添加一行</li>
+                <li>其他功能</li>
+                <li>其他功能</li>
+                <li>其他功能</li>
+                <li>其他功能</li>
+
+            </ul>
+        </div>
+        <caption>表格(右击点击操作,双击进行更改内容)</caption>
+        <thead>
+            <tr>
+                <td>快速添加</td>
+                <td>类别一</td>
+                <td>类别二</td>
+                <td>类别三</td>
+                <td>类别四</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>类别1</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>类别2</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>类别3</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>类别4</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>类别5</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>类别6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>类别7</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>类别8</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

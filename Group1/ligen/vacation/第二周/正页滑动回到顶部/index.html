@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>正页滚动和回到顶部</title>
+<!-- <script type="text/javascript" src='script.js'></script> -->
+<script type="text/javascript" src='js.js'></script></head>
+<style type="text/css">
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    border:0;
+}
+
+ol, ul ,li{list-style: none;}
+    nav{
+        position: fixed;
+        top:50%;
+        transform: translate(0, -50%);
+        right:40px;
+        z-index: 10;
+    }
+    div{
+        z-index: 1;
+    }
+    nav a{
+        display:block;
+        width:15px;
+        height:15px;
+        border-radius:50%;
+        border:5px solid black;
+    }
+    nav li {
+        position: relative;
+        margin-top:30px;
+        width:100px;
+
+    }
+    nav li:last-child a{
+        background-image: url('http://oquq74tfk.bkt.clouddn.com/17-8-2/92311758.jpg');
+        -webkit-background-size: 140%;
+        background-size: 140%;
+        background-position: -3px -2.5px ;
+    }
+    nav li span{
+        display:inline-block;
+        font-size:12px;
+        position: absolute;
+        line-height:25px;
+        left:40px;
+        top:0;
+        opacity:0;
+        transition:all .5s ease;
+    }
+    nav li:hover span{
+        opacity:1;
+    }
+    nav li:hover a{
+        background-color: #fff;
+    }
+     #contain{
+        width:100vw;
+        height:100vh;
+        overflow:hidden;
+    }
+    .box{
+        width:100vw;
+        height:400vh;
+    }
+    .page{
+        width:100vw;
+        height:100vh;
+    }
+    .page1{
+        background-color: red;
+    }
+   .page2{
+        background-color: blue;
+    }
+   .page3{
+        background-color: yellow;
+    }
+    .page4{
+        background-color: green;
+    }
+    #box{
+        position: relative;
+    }
+    .now{
+        background-color: #fff;
+    }
+</style>
+<body>
+    <nav>
+        <ul id="dot">
+            <li><a href="#" class="now"></a><span>第一页</span></li><!--
+         --><li><a href="#"></a><span>第二页</span></li><!--
+         --><li><a href="#"></a><span>第三页</span></li><!--
+         --><li><a href="#"></a><span>第四页</span></li>
+            <li><a href="#"></a><span>回到顶部</span></li>
+        </ul>
+    </nav>
+    <div id="contain">
+    <div id="box">
+
+
+        <div class="page1 page">
+
+        </div>
+        <div class="page2 page">
+
+        </div>
+        <div class="page3 page">
+
+        </div>
+        <div class="page4 page">
+
+        </div>
+     </div>
+    </div>
+</body>
+</html>
