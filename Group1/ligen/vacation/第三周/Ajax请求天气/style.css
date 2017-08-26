@@ -1,0 +1,143 @@
+/*
+* @Author: Marte
+* @Date:   2017-08-11 08:24:35
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-08-26 22:26:33
+*/
+#ui-weather{
+    margin:0 auto;
+    overflow: hidden;
+    padding:20px;
+}
+body{
+    background-image: url('背景.jpg');
+    background-size: cover;
+    background-attachment:fixed;
+}
+.ui-weather-city,.ui-waether-updata{
+    height:100px;
+    float: left;
+    margin-bottom: 52px;
+}
+.btn{
+    margin:0 auto;
+    line-height:30px;
+    outline:0;
+    border:0;
+    cursor:pointer;
+}
+.btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+.ui-weather-city-now,.ui-weather-lastupdata{
+    text-align: center;
+    line-height:50px;
+}
+.ui-weather-img,.ui-weather-temperature,.ui-weather-more{
+    margin:0 auto;
+}
+.ui-weather-temperature {
+    font-size: 100px;
+    text-align:center;
+}
+.ui-weather-more{
+    border-radius: 15px;
+    background-color: #aaa;
+    color:#fff;
+    font-size:16px;
+    margin-top:30px;
+    padding:5px;
+    padding-left:30px;
+    padding-right: 30px;
+}
+.ui-weather-more span{
+    display: inline-block;
+    text-align:center;
+    border-right:2px solid #fff;
+}
+.ui-weather-more:hover{
+    background-color: rgba(0,0,0,.5)
+}
+.ui-weather-more span:nth-of-type(3){
+    border-right: 0;
+}
+.ui-weather-suggestion{
+    margin:0 auto;
+    margin-top:30px;
+    padding:0;
+}
+.ui-weather-suggestion>div{
+    float: left;
+    width:50px;
+    height:50px;
+    position: relative;
+}
+.ui-weather-suggestion>div:nth-of-type(2){
+    float:right;
+}
+.ui-weather-suggestion span{
+    display: block;
+    padding: 10px;
+    width:100%;
+    height:50px;
+    background-image: url('http://oquq74tfk.bkt.clouddn.com/17-8-11/7640792.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor:pointer;
+}
+.ui-weather-suggestion-dressing span{
+    background-image: url('http://oquq74tfk.bkt.clouddn.com/17-8-11/83183846.jpg');
+
+}
+.ui-weather-suggestion>div div{
+    position: absolute;
+    width:300px;
+    height:100px;
+    padding:10px;
+    top:70px;
+    left:-50px;
+    background-color: rgba(0,0,0,.8);
+    word-wrap: break-word;
+    word-break: normal;
+    border-radius:20px;
+    z-index: 12;
+    color:#fff;
+   display:none;
+    font-size:16px;
+}
+
+.ui-weather-others-btn{
+    margin-top:50px;
+}
+.ui-weather-others-btn button.btn{
+    width:100%;
+    float: left;
+}
+.ui-weather-other-1{
+    height:80px;
+    outline:1px solid #101010;
+    overflow:hidden;
+}
+
+.ui-weather-other-img{
+    background-image: url("http://weixin.jirengu.com/images/weather/code/1.png");
+    background-size: cover;
+    width:80px;
+    height:80px;
+    float:left;
+}
+.ui-weather-other-data{
+    float:left;
+    outline:1px solid #101010;
+}
+.ui-weather-other-data span{
+    display:inline-block;
+    padding:0;
+    margin:0;
+    line-height:80px;
+    text-align:center;
+    font-size:14px;
+}
+
+body::-webkit-scrollbar {display:none}

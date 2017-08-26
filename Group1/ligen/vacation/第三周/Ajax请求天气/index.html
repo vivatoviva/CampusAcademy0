@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>天气预报</title>
+    <script src="jquery-3.2.1.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap-grid.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <<script src="data.js"></script>
+</head>
+<body>
+    <div id="ui-weather" class="col-sm-7">
+        <div class="ui-weather-city col-sm-6">
+            <div class="ui-weather-city-now col-sm-12">
+                重庆
+            </div>
+            <div class="ui-weather-btn-city">
+                <button class="btn btn-primary col-sm-12" >更换城市</button>
+          <!--       <div id="city">
+                        <ul>
+                            <li>北京</li>
+                            <li>上海</li>
+                            <li>田径</li>
+                            <li>海南</li>
+                        </ul>
+                </div> -->
+                <!-- 这里二级菜单 -->
+            </div>
+        </div>
+        <div class="ui-waether-updata col-sm-6">
+            <div class="ui-weather-lastupdata col-sm-12">
+                     2017-08-11 7:40
+            </div>
+            <div class="ui-weather-btn-updata col-sm-12">
+                <button class="btn col-sm-12">更新天气情况</button>
+            </div>
+        </div>
+        <br clear="both">
+        <!-- 现在天气版块 -->
+        <div class="ui-weather-now col-sm-12">
+            <div class="ui-weather-img col-sm-4">
+                <img src="http://weixin.jirengu.com/images/weather/code/1.png" alt="">
+            </div>
+            <div class="ui-weather-temperature col-sm-4">
+                26
+            </div>
+            <div class="ui-weather-more col-sm-7" >
+                    <span class="col-sm-3"></span>
+                    <span class="col-sm-4">东北风二级</span>
+                    <span class="col-sm-4">体感温度：50</span>
+           </div>
+            <div class="ui-weather-suggestion col-sm-2">
+                    <div class="ui-weather-suggestion-dressing">
+                        <span class="ui-weather-suggestion-dressing-icon">
+                        </span>
+                        <div>
+                           safffffffffffffffffffffffffffff
+                        </div>
+                    </div>
+                    <div class="ui-weather-suggestion-travel">
+                        <span class="ui-weather-suggestion-travel-icon">
+                        </span>
+                       <div>
+                           safffffffffffffffffffffffffffff
+                        </div>
+                    </div>
+                    <br clear="both">
+            </div>
+        </div>
+        <!-- 其他版面 -->
+        <div class="ui-weather-others-btn col-sm-12">
+            <button class="btn col-sm-3">天气温度排序</button>
+            <button class="btn col-sm-3">天气温差排序</button>
+            <button class="btn col-sm-3">天气时间排序</button>
+            <button class="btn col-sm-3">天气风力排序</button>
+        </div>
+        <br clear="both">
+        <div class="ui-weather-other col-sm-12">
+            <div class="ui-weather-other-1 col-sm-12">
+                <div class="ui-weather-other-img col-sm-2 col-sm-offset-1" >
+                </div>
+                <div class="ui-weather-other-data col-sm-9" >
+                    <span class="ui-weather-other-time col-sm-3">时间：8-12</span>
+                    <span class="ui-weather-other-text col-sm-2">多云</span>
+                    <span class="ui-weather-other-temperature col-sm-3">21/20</span>
+                    <span class="ui-weather-other-wind col-sm-3">东北风二级</span>
+                </div><br clear="both">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
