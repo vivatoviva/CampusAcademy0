@@ -1,0 +1,1007 @@
+/* =======
+  全局样式
+   =======*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: 0;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    font-size: 16px;
+    color: #666666;
+    background-color: #f8f8f8;
+    foot-family: "微软雅黑";
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+@font-face {
+    font-family: "Gill Sans MT";
+    src: url('../ttf/Gill Sans MT.ttf');
+}
+
+header,
+.content,
+footer {
+    width: 100%;
+}
+
+.logo span {
+    line-height: 22px;
+    font-size: 22px;
+    color: #39a030;
+    display: inline-block;
+}
+
+.logo span {
+    font-weight: bold;
+    display: inline-block;
+    padding-right: 12px;
+    font-family: "Gill Sans MT"
+}
+
+.logo  span + span {
+    font-weight: normal;
+    padding-left: 12px;
+    padding-right: 0px;
+    color: #333333;
+    border-left: 1.5px solid #39a030;
+}
+
+@media screen and (max-width:1204px) {
+}
+
+button {
+    outline: 0;
+    border: 0;
+}
+
+/* =======
+  导航栏部分
+   =======*/
+@media screen and (max-width:1204px) {
+    .h .remind {
+        width: 960px !important;
+    }
+
+    .h .header {
+        width: 960px !important;
+    }
+
+}
+
+.h {
+    background-color: #f3f3f3;
+}
+
+.h .remind {
+    width: 1210px;
+    margin: 0 auto;
+    line-height: 36px;
+    color: #333333;
+    font-size: 12px;
+}
+
+.h .remind p {
+    float: left;
+}
+
+.h .remind p a {
+    color: #21a557;
+    cursor: pointer;
+}
+
+.h .remind span {
+    float: right;
+    cursor: pointer;
+}
+
+.h .remind span img {
+    margin-right: 6px;
+}
+
+.h .header-box {
+    width: 100%;
+    background-color: #fff;
+}
+
+.h .header {
+    width: 1210px;
+    margin: 0 auto;
+    line-height: 90px;
+    height: 90px;
+    position: relative;
+}
+
+.header .logo {
+    float: left;
+    position: relative;
+}
+
+.header .btn button,
+.header .btn p {
+    display: inline-block;
+}
+
+.header .btn {
+    float: left;
+    position: relative;
+    margin-left: 30px;
+    font-family: "宋体";
+}
+
+.header .btn div {
+    line-height: 22px;
+    position: relative;
+    top: 33px;
+}
+
+.header .btn button {
+    width: 55px;
+    height: 22px;
+    text-align: center;
+    font-size: 12px;
+    margin-right: 11px;
+    cursor: pointer;
+}
+
+.header .btn button span {
+    padding-top: 2px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-size: 100% 100%;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header .btn p {
+    margin-left: 9px;
+    line-height: 21px;
+    position: relative;
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+/*follow 样式*/
+.follow button {
+    background-color: #21a557;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.follow span {
+    background-image: url('../img/加号.png');
+}
+
+/*all-follow 样式*/
+.all-follow button {
+    background: rgba(0, 0, 0, 0);
+}
+
+.all-follow div {
+    background-color: #f8f8f8;
+    border-radius: 2px;
+    border: 1px solid #efefef;
+}
+
+.all-follow span {
+    background-image: url('../img/对号.png');
+}
+
+.all-follow p {
+    cursor: pointer;
+}
+
+.all-follow p:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 13px;
+    left: -10px;
+    top: 5px;
+    background-color: #cccccc;
+}
+
+/*悬停效果*/
+.all-follow p:hover {
+    text-decoration: underline;
+    color: #21a557;
+}
+
+.header .nav {
+    float: right;
+}
+
+.header .nav ul li {
+    float: left;
+}
+
+.header .nav ul li a {
+    color: #666666;
+    text-decoration: none;
+}
+
+.header .nav ul li+li {
+    margin-left: 56px;
+}
+
+.header .nav li.li-3 {
+    margin-right: 30px;
+}
+
+span.li-hover {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 11px;
+    background-image: url('../img/放大镜-灰.png');
+    position: relative;
+    background-repeat: no-repeat;
+    top: 35px;
+}
+
+.header .nav li:hover a {
+    color: #39a030;
+}
+
+.header .nav li:hover ~ span {
+    background-image: url('../img/放大镜-绿.png');
+    background-position: -.5px 0;
+}
+
+/* ================
+    content 第一部分
+    banner样式
+   ================*/
+section.banner {
+    width: 100%;
+    height: 460px;
+    position: relative;
+}
+
+section.banner .wraper {
+    width: 100%;
+    height: 460px;
+    position: absolute;
+    overflow: hidden;
+}
+
+section.banner .page {
+    position: absolute;
+}
+
+section.banner .page img {
+    width: 100vw;
+    height: auto;
+    min-width: 1616px;
+    min-height: 460px;
+}
+
+.banner-dot li {
+    cursor: pointer;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    float: left;
+}
+
+.banner-dot li+li {
+    margin-left: 11px;
+}
+
+.banner-dot {
+    z-index: 5;
+    position: absolute;
+    width: 52px;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -26px;
+    // -webkit-transform: translateX(-50%);
+    //     -ms-transform: translateX(-50%);
+    //         transform: translateX(-50%);
+}
+
+.banner-dot .banner-active {
+    background-color: #333230;
+}
+
+@media screen and (max-width:1204px) {
+}
+
+/* ================
+    content 第一部分
+    product样式
+   ================*/
+@media screen and (max-width:1204px) {
+    section.product {
+        width: 960px !important;/*响应式布局改变东西*/
+    }
+
+    .product-intro {
+        float: right;
+        width: 175px !important;
+    }
+
+}
+
+section.product {
+    width: 1210px;/*响应式布局改变东西*/
+    margin: 0 auto;
+    height: 295px;
+}
+
+section.product .fdiv {
+    width: 28.6666666%;
+    float: left;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+section.product .fdiv+.fdiv {
+    margin-left: 6%;
+}
+
+.product-img {
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-top: 7px;
+    margin-right: 20px;
+}
+
+.product-intro {
+    float: right;
+    width: 238px;/*响应式布局*/
+    //width: calc(100% - 100px);
+}
+
+.product-intro p.p1 {
+    font-size: 22px;
+    margin-bottom: 14px;
+    color: #333333;
+    zoom: 1;
+}
+
+.product-intro p.p2 {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: justify;
+    text-justify:inter-ideograph;
+    zoom: 1;
+    padding-bottom: 27px;
+}
+
+.product-intro a {
+    font-size: 14px;
+    color: #39a030;
+    text-decoration: none;
+    zoom: 1;
+}
+
+.product-intro a:hover {
+    text-decoration: underline;
+}
+
+/* ================
+    content 第一部分
+    work样式
+   ================*/
+section.work {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+
+section.work .work-img {
+    width: 1640px;
+    position: relative;
+    left: 50%;
+    margin-left: -808px;
+    // -webkit-transform: translateX(-50%);
+    //     -ms-transform: translateX(-50%);
+    //         transform: translateX(-50%);
+}
+
+.work-img div {
+    float: left;
+}
+
+section.work .work-img div+div {
+    margin-left: 4px;
+    width: auto;
+}
+
+/* ================
+    content 第一部分
+    course样式
+   ================*/
+@media screen and (max-width:1204px) {
+    section.course {
+        width: 960px !important;
+    }
+
+    .course-lesson-items {
+        width: 730px !important;
+    }
+
+    .course-lesson {
+        width: 715px;
+    }
+
+}
+
+section.course {
+    background-color: #f8f8f8;
+    padding-top: 81px;
+    margin: 0 auto;
+    width: 1210px;
+    padding-bottom: 120px;
+}
+
+.course-lesson {
+    float: left;
+}
+
+.course-lesson .tab {
+    width: 400px;
+    height: 50px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 3px 3px #d4d3d3;
+    box-shadow: 0 3px 3px #d4d3d3;
+    margin-bottom: 28px;
+}
+
+.course-lesson .tab button {
+    width: 200px;
+    height: 50px;
+    float: left;
+    cursor: pointer;
+    cursor: pointer;
+    font-size: 20px;
+    color: #666666;
+}
+
+.course-lesson .tab .lesson-active {
+    background-color: #39a030;
+    color: #fff;
+}
+
+.course-lesson-items {
+    width: 975px;
+    margin-left: -18px;
+    position: relative;
+}
+
+.course-lesson-items div.lesson {
+    padding: 1px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 225px;
+    height: 228px;
+    background-color: #fff;
+    float: left;
+    margin-left: 18px;
+    border: 1px solid #f1f1f1;
+    margin-bottom: 19px;
+    position: relative;
+}
+
+.course-lesson-items div.lesson .img {
+    width: 223px;
+    height: 124px;
+    overflow: hidden;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.course-lesson-items div.lesson .img img {
+    width: 220px;
+    height: 124px;
+    overflow: hidden;
+    display: block;
+}
+
+.course-lesson-items div.lesson p {
+    padding-left: 4px;
+    padding-right: 10px;
+}
+
+.course-lesson-items div.lesson p.p1 {
+    font-size: 12px;
+    color: #333333;
+    padding-top: 9px;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.course-lesson-items div.lesson p.p2 {
+    font-size: 12px;
+    color: #999999;
+    padding-top: 9px;
+}
+
+.course-lesson-items div.lesson p.p3 {
+    margin-left: 4px;
+    margin-top: 9px;
+    display: inline-block;
+    line-height: 16px;
+    border: 1px solid #dddddd;
+    color: #333333;
+    border-radius: 2px;
+    font-size: 12px;
+    padding-left: 0;
+    padding-right: 3px;
+}
+
+.course-lesson-items div.lesson p.p3 span {
+    display: inline-block;
+    height: 11px;
+    margin-right: 3px;
+    line-height: 11px;
+}
+
+.course-lesson-items div.lesson p.p4 {
+    margin-top: 9px;
+    font-size: 12px;
+    color: #ff3f00;
+}
+
+/*  悬停出现悬停*/
+.course-lesson-items div.lesson:hover .hover-lesson {
+    display: block;
+}
+
+.course-lesson-items div.lesson .hover-lesson {
+    display: none;
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    width: 482px;
+    height: auto;
+    padding-bottom: 22px;
+    padding: 13px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #fff;
+    z-index: 10px;
+    -webkit-box-shadow: 0 0 4px #d4d3d3;
+    box-shadow: 0 0 4px #d4d3d3;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.course-lesson-items div.lesson .hover-lesson .img {
+    width: 223px;
+    height: 124px;
+    margin: 0;
+    overflow: hidden;
+    float: left;
+}
+
+.course-lesson-items div.lesson .hover-lesson div {
+    width: 190px;
+    float: left;
+    margin-left: 20px;
+}
+
+.course-lesson-items div.lesson .hover-lesson div p.p1 {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 17px;
+    padding: 0;
+    width: 100%;
+}
+
+.course-lesson-items div.lesson .hover-lesson div p.p2 {
+    font-size: 12px;
+    color: #666666;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.course-lesson-items div.lesson .hover-lesson div p.p3 {
+    font-size: 12px;
+    color: #666666;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 7px;
+    border: 0;
+    background-color: #fff;
+}
+
+.course-lesson-items div.lesson .hover-lesson div p.p4 {
+    color: #666666;
+    padding: 0;
+    margin: 0;
+}
+
+.course-lesson-items div.lesson .hover-lesson p.first {
+    margin: 0;
+    padding: 0;
+    margin-top: 43px;
+    font-size: 14px;
+    color: #666666;
+    line-height: 24px;
+    white-space: normal;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.course-lesson-page {
+    float: right;
+    margin-top: 11px;
+}
+
+.course-lesson-page div button {
+    float: left;
+    width: 30px;
+    height: 20px;
+    background-color: #9dd8b1;
+    color: #fff;
+    cursor: pointer;
+}
+
+.course-lesson-page div #page-prev {
+    margin-right: 10px;
+}
+
+.course-lesson-page div #page-next {
+    margin-right: 2px;
+    margin-left: 10px;
+}
+
+.course-lesson-page div ul {
+    float: left
+}
+
+.course-lesson-page div ul li {
+    float: left;
+    text-align: center;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.course-lesson-page div ul li.page-active {
+    color: #9dd8b1;
+}
+
+.course-lesson-page div ul li:hover {
+    background-color: #9dd8b1;
+    color: #fff;
+}
+
+.organization-intro {
+    float: right;
+    width: 223px;
+    height: 229px;
+    overflow: hidden;
+    background-color: #fff;
+    -webkit-box-shadow: -1px 0px 1px #ecebeb;
+    box-shadow: -1px 0px 1px #ecebeb;
+}
+
+.organization-intro .fp {
+    font-size: 16px;
+    padding-left: 20px;
+    color: #333333;
+    line-height: 55px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.organization-intro .fd {
+    padding: 22px;
+    position: relative;
+    cursor: pointer;
+}
+
+.organization-intro .fd p {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/*视频按钮*/
+.organization-intro .fd div {
+    width: 180px;
+    height: 110px;
+    position: absolute;
+    top: 48px;
+    left: 22px;
+    background-image: url('../img/播放.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.course-rank {
+    float: right;
+    width: 223px;
+    background-color: #fff;
+    margin-top: 20px;
+    -webkit-box-shadow: 0 1px 1px #ecebeb;
+    box-shadow: 0 1px 1px #ecebeb;
+}
+
+.course-rank .fp {
+    padding: 20px;
+    font-size: 16px;
+    color: #333333;
+    height: 56px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ecebeb;
+}
+
+.course-rank .fd {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    height: 652px;
+    overflow: hidden;
+    position: relative;
+}
+
+.course-rank .img img {
+    width: 50px;
+    height: 50px;
+}
+
+.course-rank .fd ul {
+    position: relative;
+}
+
+.course-rank .fd ul li {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50px;
+    position: relative;
+}
+
+.course-rank li .img {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.course-rank li .text {
+    float: left;
+    padding-left: 12px;
+    width: 100%;
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 14px;
+    color: #333333;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-bottom: 13px;
+}
+
+.text span {
+    font-size: 12px;
+    color: #bbbbbb;
+}
+
+/* ================
+    footer样式
+   ================*/
+@media screen and (max-width:1204px) {
+    footer .footer-box {
+        width: 960px !important;
+    }
+
+    .footer-icp {
+        margin-left: 0px !important;
+    }
+
+}
+
+footer {
+    width: 100%;
+    height: 260px;
+    padding-top: 92px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #2c3339;
+}
+
+footer .footer-box {
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.footer-icp {
+    float: left;
+    margin-left: 50px;
+}
+
+.footer-icp div span {
+    color: #39a030;
+}
+
+.footer-icp p {
+    font-size: 12.5px;
+}
+
+.footer-icp p+p {
+    margin-top: 10px;
+}
+
+.footer-link {
+    float: left;
+    margin-left: 150px;
+}
+
+.footer-link .nav p {
+    font-size: 12.5px;
+    color: #5d6164;
+}
+
+.footer-link .nav li a {
+    font-size: 14.58px;
+    color: #5d6164;
+    text-decoration: none;
+}
+
+.footer-link .nav li a:hover {
+    text-decoration: underline;
+}
+
+.footer-link .nav li {
+    margin-top: 16px;
+    position: relative;
+}
+
+.footer-link .nav {
+    float: left;
+}
+
+.footer-link .nav+.nav {
+    margin-left: 98px;
+}
+
+.footer-icp div {
+    padding-bottom: 29px;
+}
+
+.footer-link span {
+    position: absolute;
+    margin-left: 10px;
+}
+
+.footer-link span img {
+    margin-top: 2px;
+}
+
+/* ============
+    bg背景层
+  ==============*/
+.bg {
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+    z-index: 15;
+    display: none;
+}
+
+.bg-1 {
+    position: absolute;
+    display: none;
+}
+
+.bg-1 div {
+    width: 387px;
+    height: 288px;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.bg-1 span {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.bg-1 div p {
+    font-size: 18px;
+    color: #444444;
+    padding-bottom: 19px;
+}
+
+.bg-1 input {
+    background-color: #fafafa;
+    width: 295px;
+    line-height: 45px;
+    height: 45px;
+    font-size: 16px;
+    margin-bottom: #cccccc;
+    text-indent: 12px;
+    outline: 0;
+    border: 0;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 0px 0px 6px #dfdfdf inset;
+    box-shadow: 0px 0px 6px #dfdfdf inset;
+}
+
+.bg-1 button {
+    width: 295px;
+    height: 46px;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 18px;
+    background-color: #24ac47;
+    cursor: pointer;
+    -webkit-box-shadow: 2px 2px 2px #d5e3da;
+    box-shadow: 2px 2px 2px #d5e3da;
+}
+
+.bg-2 {
+    position: absolute;
+    display: none;
+}
+
+.bg-2 div {
+    position: relative;
+    padding: 30px;
+    width: 950px;
+    padding-bottom: 42px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.bg-2 div span {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+}
+
+.bg-2 div p {
+    font-size: 18px;
+    color: #444444;
+    margin-bottom: 24px;
+}
+
+.bg-2 div video {
+    width: 889px;
+}
